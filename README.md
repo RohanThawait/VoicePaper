@@ -11,7 +11,9 @@ VoicePaper is a full-stack, containerized application that transforms online art
 -----
 
 ## 🚀 Screenshots
-
+![Podcast app screenshot](https://github.com/RohanThawait/VoicePaper/blob/main/screenshots/Screenshot%202025-07-27%20230815.png)
+![Podcast app screenshot](https://github.com/RohanThawait/VoicePaper/blob/main/screenshots/Screenshot%202025-07-27%20230833.png)
+![Podcast app screenshot](https://github.com/RohanThawait/VoicePaper/blob/main/screenshots/Screenshot%202025-07-27%20230849.png)
 
 -----
 
