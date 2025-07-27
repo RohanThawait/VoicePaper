@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=Postgres007
+      - POSTGRES_DB=VoicePaper
+    networks: # Assign db to the network
+      - app_network
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - DATABASE_URL=postgresql://user:Postgres007@db:5432/VoicePaper
+    depends_on:
+      - db
+    networks: # Assign backend to the network
+      - app_network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    networks: # Assign frontend to the network
+      - app_network
+
+volumes:
+  postgres_data:
+
+networks: # Define the custom network at the top level
+  app_network:
+    driver: bridge

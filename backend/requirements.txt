@@ -1,0 +1,14 @@
+PyMuPDF
+google-generativeai 
+python-dotenv
+elevenlabs
+gTTS
+pydub
+ffmpeg-python
+sqlalchemy
+fastapi
+newspaper3k
+uvicorn
+lxml_html_clean
+psycopg2-binary
+python-multipart

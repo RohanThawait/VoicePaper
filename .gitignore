@@ -1,0 +1,5 @@
+env
+example.py
+.env
+pdf_docs
+secrets/
